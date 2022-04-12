@@ -1,0 +1,306 @@
+/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+* {
+    color: antiquewhite;
+}
+
+/* Responsive Start */
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/** Image - https://www.w3schools.com/css/css_rwd_grid.asp **/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
+.overflow {
+    overflow-x: auto;
+}
+
+/* Responsive End */
+
+/* Selectors Start */
+
+html {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.3rem;
+    cursor: url("../Resources/cursors/RawFish-small.png") 2 2, auto;
+}
+
+a:hover, button:hover, input:hover {
+    cursor: url("../Resources/cursors/RawFishPointer-small.png") 8 2, auto;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Selectors End*/
+
+/* Classes Start */
+.title {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 70%;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+iframe.homepage {
+    width: 70%;
+    height: 500px;
+}
+
+iframe.homepage {
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: antiquewhite;
+}
+
+p.homepage {
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+.santaFrame{
+    width: 84%;
+    height: 500px;
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: antiquewhite;
+}
+
+.colorTitle{
+    font-family: 'Rock Salt', cursive;
+}
+
+.goodFont{
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.santaGame{
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: antiquewhite;
+}
+
+.footerHr{
+    width: 80%;
+    background-color: antiquewhite;
+    border-width: 3px;
+    border-radius: 35px;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+/* Classes End */
+
+/* IDs Start */
+
+img#profilePicture {
+    border-style: solid;
+    border-radius: 70px;
+    border-width: 10px;
+    border-color: antiquewhite;
+}
+
+#teamIntro hr {
+    width: 50%;
+    background-color: antiquewhite;
+    border-width: 3px;
+    border-radius: 35px;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+h1#grossFont {
+    font-family: 'Tenor Sans', sans-serif;
+    text-align: center;
+}
+
+h3, h4#grossFont {
+    font-family: 'Tenor Sans', sans-serif;
+    text-align: center;
+}
+
+body#minion {
+    background-image: url("https://thumbs.gfycat.com/SnarlingCreativeEnglishsetter-size_restricted.gif");
+}
+
+#bodyContent {
+    /* background-color: rgba(70, 130, 180, 0.4); */
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    height: auto;
+}
+
+/* IDs End */
+
+/* Animation Start */
+
+.backgroundGradient {
+    background: linear-gradient(322deg, #c5681d, #ae2ea4, #bbab2c);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 16s ease infinite;
+    -moz-animation: AnimationName 16s ease infinite;
+    -o-animation: AnimationName 16s ease infinite;
+    animation: AnimationName 16s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+
+/* Animation End */
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #c5772e 0%,
+    #4cc9ce 29%,
+    #7f38d1 67%,
+    #d43a82 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 70px;
+}
+
+.animate-charcter2
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #c5772e 0%,
+    #4cc9ce 29%,
+    #7f38d1 67%,
+    #d43a82 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 45px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
