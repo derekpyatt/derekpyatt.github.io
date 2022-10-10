@@ -11,20 +11,21 @@ $filler: #E74C3C;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  background: $white;
-}
-
 h1,h2,h3{
   font-family: 'Changa One', cursive;
   font-weight: normal;
 }
 
+body {
+  margin: 0;
+  background: $white;
+}
+
 .logo{
-  margin-top: -20px;
+ margin-top: 20px;
  width: 100px;
  height: 100px;
+ float: left; 
 }
 
 // Page Layout
@@ -34,21 +35,10 @@ h1,h2,h3{
   overflow: hidden;
 }
 
-// Page Navigation
+// Side Navigation
 .side-nav {
   background: $primary;
   padding-top: 1.5rem;
-}
-
-.top-nav {
-  background: $primary;
-  padding-top: 0.5rem;
-  overflow: hidden;
-  background-color: $primary;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color:antiquewhite;
 }
 
 .side-nav ul {
@@ -84,9 +74,7 @@ h1,h2,h3{
   justify-content: space-around;
 }
 
-li.rotate{
-  transform: rotate(90deg);
-}
+//POPUP CSS
 
 #overlay {
   display: none;
@@ -133,7 +121,10 @@ li.rotate{
   border-radius: 10px;
   background-color: $primary-dark;
   font-size: 18px;
+  float: right;
 }
+
+// CARD CSS
 
 .card{
   border: 1px solid black;
@@ -142,6 +133,7 @@ li.rotate{
   border-radius: 20px;
   box-shadow: 10px 10px 10px #333;
   padding: 20px;
+  width: .8rem;
 }
 
 .cardImage{
