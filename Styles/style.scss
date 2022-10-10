@@ -1,45 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Allerta&family=Changa+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Changa+One&display=swap');
+
+$primary: #1f1521;
+$primary-dark: #405469;
+$white: #ECF0F1;
+$filler: #E74C3C;
+
+// Global
 * {
-  font-family: "Allerta", sans-serif;
+  font-family: 'Allerta', sans-serif;
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: #ECF0F1;
+  background: $white;
 }
 
-h1, h2, h3 {
-  font-family: "Changa One", cursive;
+h1,h2,h3{
+  font-family: 'Changa One', cursive;
   font-weight: normal;
 }
 
-.logo {
+.logo{
   margin-top: -20px;
-  width: 100px;
-  height: 100px;
+ width: 100px;
+ height: 100px;
 }
 
+// Page Layout
 .flex-page {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
+// Page Navigation
 .side-nav {
-  background: #1f1521;
+  background: $primary;
   padding-top: 1.5rem;
 }
 
 .top-nav {
-  background: #1f1521;
+  background: $primary;
   padding-top: 0.5rem;
   overflow: hidden;
-  background-color: #1f1521;
+  background-color: $primary;
   position: fixed;
   top: 0;
   width: 100%;
-  color: antiquewhite;
+  color:antiquewhite;
 }
 
 .side-nav ul {
@@ -50,19 +59,22 @@ h1, h2, h3 {
 .side-nav ul li a {
   padding: 0.75rem 2rem;
   font-size: 1.2rem;
-  color: #ECF0F1;
+  color: $white;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
   display: block;
-}
-.side-nav ul li a:hover {
-  background: #405469;
-}
-.side-nav ul li a:focus {
-  background: #405469;
+  
+  &:hover {
+    background: $primary-dark;
+  }
+  
+  &:focus {
+    background: $primary-dark;
+  }
 }
 
+// Content
 .content {
   flex-grow: 1;
   padding: 2rem;
@@ -72,7 +84,7 @@ h1, h2, h3 {
   justify-content: space-around;
 }
 
-li.rotate {
+li.rotate{
   transform: rotate(90deg);
 }
 
@@ -119,11 +131,11 @@ li.rotate {
 #popupButton {
   cursor: pointer;
   border-radius: 10px;
-  background-color: #405469;
+  background-color: $primary-dark;
   font-size: 18px;
 }
 
-.card {
+.card{
   border: 1px solid black;
   margin: 20px auto;
   background-color: #E1E1E1;
@@ -132,7 +144,7 @@ li.rotate {
   padding: 20px;
 }
 
-.cardImage {
+.cardImage{
   border: 1px solid black;
   margin: 20px auto;
   border-radius: 20px;
@@ -140,10 +152,10 @@ li.rotate {
   padding: 20px;
 }
 
-div.cardImageRight {
+div.cardImageRight{
   float: right;
 }
 
-div.cardImageLeft {
+div.cardImageLeft{
   float: left;
-}/*# sourceMappingURL=style.css.map */
+}

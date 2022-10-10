@@ -5,10 +5,73 @@
     <meta charset="UTF-8">
     <link rel='stylesheet' href='Styles/style.css'>
     <title>Derek Pyatt Portfolio</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Resources/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Resources/Favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Resources/Favicon//favicon-16x16.png">
+    <link rel="manifest" href="Resources/Favicon//site.webmanifest">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
 </head>
 
 <body>
-
+    <div class="flex-page">
+      <!-- TOP NAV -->
+      <div class="top-nav">
+        <h1>Derek Pyatt</h1>
+        <button id="popupButton">Contact</button>
+      </div>
+      <!-- SIDE NAV -->
+      <div class="side-nav">
+        <img src="Resources/Images/pyattLogo.png" class="logo" alt="Joshua Tree in Desert">
+        <ul>
+          <li class="Zrotate"><a href="#">one</a></li>
+          <li class="Zrotate"><a href="#">two</a></li>
+          <li class="Zrotate"><a href="#">three</a></li>
+        </ul>
+      </div>
+        <!-- CONTACT POPUP -->
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="popupControls">
+                <span id="popupClose">X</span>
+            </div>
+            <div class="popupContent">
+                <h1>Contact Me</h1>
+                <h2 style="font-weight: Bold;">Linked In</h2>
+                <h3><a href="https://www.linkedin.com/in/derek-pyatt-b3152b23a/">www.linkedin.com/in/derek-pyatt</a></h3>
+                <h2 style="font-weight: Bold;">Github</h2>
+                <h3><a href="https://github.com/derekpyatt">https://github.com/derekpyatt</a></h3>
+                <h2 style="font-weight: Bold;">Indeed</h2>
+                <h3><a href="#">nuthin yet</a></h3>
+            </div>
+        </div>
+        <!-- WEBSITE CONTENT -->
+        <div class="content">
+          <div class="card">
+            <img src="Resources/Images/testAlf.jpg" height="200px" class="cardImage cardImageLeft" alt="Derek Pyatt Headshot">
+          </div>
+        </div>
+      </div>
+      <!-- POPUP SCRIPT -->
+      <script type="text/javascript">
+        // Initialize Variables
+        var closePopup = document.getElementById("popupClose");
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        var button = document.getElementById("popupButton");
+        // Close Popup Event
+        closePopup.onclick = function() {
+          overlay.style.display = 'none';
+          popup.style.display = 'none';
+        };
+        // Show Overlay and Popup
+        button.onclick = function() {
+          overlay.style.display = 'block';
+          popup.style.display = 'block';
+        }
+      </script>
 </body>
 
 </html>
