@@ -4,42 +4,34 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  background: #ECF0F1;
-}
-
 h1, h2, h3 {
   font-family: "Changa One", cursive;
   font-weight: normal;
+  color: #FFFECB;
+}
+
+body {
+  margin: 0;
+  background: #2E2E3A;
 }
 
 .logo {
-  margin-top: -20px;
+  margin-top: 20px;
   width: 100px;
   height: 100px;
+  float: left;
 }
 
 .flex-page {
   display: flex;
   height: 100vh;
   overflow: hidden;
+  background: #2E2E3A;
 }
 
 .side-nav {
-  background: #1f1521;
+  background: #BC5D2E;
   padding-top: 1.5rem;
-}
-
-.top-nav {
-  background: #1f1521;
-  padding-top: 0.5rem;
-  overflow: hidden;
-  background-color: #1f1521;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color: antiquewhite;
 }
 
 .side-nav ul {
@@ -50,17 +42,17 @@ h1, h2, h3 {
 .side-nav ul li a {
   padding: 0.75rem 2rem;
   font-size: 1.2rem;
-  color: #ECF0F1;
+  color: #FFFECB;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
   display: block;
 }
 .side-nav ul li a:hover {
-  background: #405469;
+  background: #DE9151;
 }
 .side-nav ul li a:focus {
-  background: #405469;
+  background: #DE9151;
 }
 
 .content {
@@ -72,16 +64,12 @@ h1, h2, h3 {
   justify-content: space-around;
 }
 
-li.rotate {
-  transform: rotate(90deg);
-}
-
 #overlay {
   display: none;
   position: absolute;
   top: 0;
   bottom: 0;
-  background: #999;
+  background: #BBB8B2;
   width: 100%;
   height: 100%;
   opacity: 0.8;
@@ -99,7 +87,7 @@ li.rotate {
   margin-top: -250px; /*Half the value of height to center div*/
   z-index: 200;
   border: 1px solid black;
-  background: #E1E1E1;
+  background: #DE9151;
   border-radius: 20px;
   box-shadow: 10px 10px 10px #333;
   padding: 10px;
@@ -108,6 +96,7 @@ li.rotate {
 #popupClose {
   float: right;
   padding: 10px;
+  color: #FFFECB;
   cursor: pointer;
 }
 
@@ -119,25 +108,35 @@ li.rotate {
 #popupButton {
   cursor: pointer;
   border-radius: 10px;
-  background-color: #405469;
+  background-color: #BC5D2E;
   font-size: 18px;
+  float: right;
 }
 
-.card {
-  border: 1px solid black;
+.defaultCard {
+  border: 1px solid #BBB8B2;
   margin: 20px auto;
-  background-color: #E1E1E1;
+  background-color: #DE9151;
+  background: #DE9151;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px #333;
-  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(112, 111, 108);
+  padding: 10px;
 }
 
 .cardImage {
-  border: 1px solid black;
+  border: 1px solid #BBB8B2;
   margin: 20px auto;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px #333;
+  box-shadow: 5px 5px 5px rgb(112, 111, 108);
   padding: 20px;
+}
+
+.headerCard {
+  width: 100%;
+}
+
+.displayCard {
+  width: 23%;
 }
 
 div.cardImageRight {

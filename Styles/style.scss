@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta&family=Changa+One&display=swap');
 
-$primary: #1f1521;
-$primary-dark: #405469;
-$white: #ECF0F1;
+$primary: #DE9151;
+$primary-dark: #BC5D2E;
+$white: #FFFECB; //Gray #BBB8B2
 $filler: #E74C3C;
 
 // Global
@@ -14,11 +14,12 @@ $filler: #E74C3C;
 h1,h2,h3{
   font-family: 'Changa One', cursive;
   font-weight: normal;
+  color: #FFFECB;
 }
 
 body {
   margin: 0;
-  background: $white;
+  background: #2E2E3A;
 }
 
 .logo{
@@ -33,11 +34,12 @@ body {
   display: flex;
   height: 100vh;
   overflow: hidden;
+  background: #2E2E3A;
 }
 
 // Side Navigation
 .side-nav {
-  background: $primary;
+  background: #BC5D2E;
   padding-top: 1.5rem;
 }
 
@@ -56,11 +58,11 @@ body {
   display: block;
   
   &:hover {
-    background: $primary-dark;
+    background: #DE9151;
   }
   
   &:focus {
-    background: $primary-dark;
+    background: #DE9151;
   }
 }
 
@@ -81,7 +83,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  background: #999;
+  background: #BBB8B2;
   width: 100%;
   height: 100%;
   opacity: 0.8;
@@ -99,7 +101,7 @@ body {
   margin-top: -250px; /*Half the value of height to center div*/
   z-index: 200;
   border: 1px solid black;
-  background: #E1E1E1;
+  background: #DE9151;
   border-radius: 20px;
   box-shadow: 10px 10px 10px #333;
   padding: 10px;
@@ -108,6 +110,7 @@ body {
 #popupClose {
   float: right;
   padding: 10px;
+  color: #FFFECB;
   cursor: pointer;
 }
 
@@ -126,22 +129,30 @@ body {
 
 // CARD CSS
 
-.card{
-  border: 1px solid black;
+.defaultCard{
+  border: 1px solid #BBB8B2;
   margin: 20px auto;
-  background-color: #E1E1E1;
+  background-color: #DE9151;
+  background: #DE9151;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px #333;
-  padding: 20px;
-  width: .8rem;
+  box-shadow: 5px 5px 5px rgb(112, 111, 108);
+  padding: 10px;
 }
 
 .cardImage{
-  border: 1px solid black;
+  border: 1px solid #BBB8B2;
   margin: 20px auto;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px #333;
+  box-shadow: 5px 5px 5px rgb(112, 111, 108);
   padding: 20px;
+}
+
+.headerCard{
+  width: 100%;
+}
+
+.displayCard{
+  width: 23%;
 }
 
 div.cardImageRight{
