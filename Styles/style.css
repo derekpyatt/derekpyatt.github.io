@@ -10,6 +10,10 @@ h1, h2, h3 {
   color: #FFFECB;
 }
 
+.centerText {
+  text-align: center;
+}
+
 body {
   margin: 0;
   background: #2E2E3A;
@@ -20,6 +24,12 @@ body {
   width: 100px;
   height: 100px;
   float: left;
+}
+
+.iconImage {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
 }
 
 .flex-page {
@@ -128,7 +138,6 @@ body {
   margin: 20px auto;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgb(112, 111, 108);
-  padding: 20px;
 }
 
 .headerCard {
@@ -136,13 +145,15 @@ body {
 }
 
 .displayCard {
-  width: 23%;
+  width: 20%;
+  height: 300px;
+  margin: 5px;
 }
 
-div.cardImageRight {
+.floatRight {
   float: right;
 }
 
-div.cardImageLeft {
+.floatLeft {
   float: left;
 }/*# sourceMappingURL=style.css.map */
