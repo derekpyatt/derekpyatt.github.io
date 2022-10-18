@@ -226,4 +226,9 @@ a.topNavItem {
 
 .floatLeft {
   float: left;
+}
+
+.alignedList {
+  text-align: center;
+  list-style-position: inside;
 }/*# sourceMappingURL=style.css.map */
