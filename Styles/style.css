@@ -1,310 +1,234 @@
-/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+@import url("https://fonts.googleapis.com/css2?family=Allerta&family=Changa+One&display=swap");
 * {
-    color: antiquewhite;
+  font-family: "Allerta", sans-serif;
+  box-sizing: border-box;
 }
 
-/* Responsive Start */
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+h1, h2, h3, h4 {
+  font-family: "Changa One", cursive;
+  font-weight: normal;
+  color: #FFFECB;
+  text-shadow: 2px 2px 5px #000000;
 }
 
-@media only screen and (min-width: 768px) {
-
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
+.linkColor {
+  color: #BBB8B2;
 }
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
+a.linkColor:hover {
+  color: #E74C3C;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.centerText {
+  text-align: center;
 }
 
-/** Image - https://www.w3schools.com/css/css_rwd_grid.asp **/
-img {
-    max-width: 100%;
-    height: auto;
+body {
+  margin: 0;
+  background: #2E2E3A;
 }
 
-/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
-.overflow {
-    overflow-x: auto;
+.logo {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  float: left;
 }
 
-/* Responsive End */
-
-/* Selectors Start */
-
-html {
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 1.3rem;
-    cursor: url("../Resources/cursors/RawFish-small.png") 2 2, auto;
+.iconImage {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
 }
 
-a:hover, button:hover, input:hover {
-    cursor: url("../Resources/cursors/RawFishPointer-small.png") 8 2, auto;
+.flex-page {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  background: #2E2E3A;
 }
 
-ul {
-    text-align: center;
-    list-style-position: inside;
+.flex-page::-webkit-scrollbar {
+  display: none;
 }
 
-/* Selectors End*/
-
-/* Classes Start */
-.title {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-    width: 70%;
+.side-nav {
+  background: #BC5D2E;
+  padding-top: 1.5rem;
 }
 
-.center {
-    text-align: center;
-    margin: auto;
-    color: white;
+.side-nav ul {
+  margin: 0;
+  padding: 0;
 }
 
-.linkFix {
-    color: steelblue;
+.side-nav ul li a {
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  color: #FFFECB;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+.side-nav ul li a:hover {
+  background: #DE9151;
+}
+.side-nav ul li a:focus {
+  background: #DE9151;
 }
 
-iframe.homepage {
-    width: 70%;
-    height: 500px;
+ul.topNav {
+  list-style-type: none;
+  padding: 0;
+  background-color: #BC5D2E;
+  text-align: center;
+  overflow: hidden;
+  margin-left: auto;
 }
 
-iframe.homepage {
-    margin-top: 1.5rem;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: antiquewhite;
+a.topNavItem {
+  display: block;
+  color: #FFFECB;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
-p.homepage {
-    text-align: left;
-    margin-left: 40px;
-    margin-right: 40px;
+.topNavItem a:hover.topNavItem {
+  background-color: #DE9151;
+  color: white;
+  text-decoration: none;
 }
 
-.navbar-brand {
-    margin-right: 0;
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.santaFrame{
-    width: 84%;
-    height: 500px;
-    margin-top: 1.5rem;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: antiquewhite;
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #BBB8B2;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
 }
 
-.colorTitle{
-    font-family: 'Rock Salt', cursive;
+#popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px; /*Half the value of width to center div*/
+  margin-top: -250px; /*Half the value of height to center div*/
+  z-index: 200;
+  border: 1px solid black;
+  background: #DE9151;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px #333;
+  padding: 10px;
 }
 
-.goodFont{
-    font-family: 'Tenor Sans', sans-serif;
+#popupClose {
+  float: right;
+  padding: 10px;
+  color: #FFFECB;
+  cursor: pointer;
 }
 
-.santaGame{
-    margin-top: 1.5rem;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: antiquewhite;
+.popupContent {
+  padding: 10px;
+  text-align: center;
 }
 
-.footerHr{
-    width: 80%;
-    background-color: antiquewhite;
-    border-width: 5px;
-    border-radius: 10px;
-    border-color: antiquewhite;
-    border-style: solid;
-}
-/* Classes End */
-
-/* IDs Start */
-
-img#profilePicture {
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 5px;
-    border-color: antiquewhite;
+#popupButton {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #BC5D2E;
+  font-size: 18px;
+  float: right;
+  width: 200px;
+  height: 50px;
+  margin-right: 30px;
+  border-color: #FFFECB;
 }
 
-#teamIntro hr {
-    width: 50%;
-    background-color: antiquewhite;
-    border-width: 5px;
-    border-radius: 10px;
-    border-color: antiquewhite;
-    border-style: solid;
+.defaultCard {
+  border: 1px solid #BBB8B2;
+  margin: auto;
+  background-color: #DE9151;
+  background: #DE9151;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(112, 111, 108);
+  padding: 10px;
 }
 
-h1#grossFont {
-    font-family: 'Tenor Sans', sans-serif;
-    text-align: center;
+.cardImage {
+  border: 1px solid #BBB8B2;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(112, 111, 108);
 }
 
-h3, h4#grossFont {
-    font-family: 'Tenor Sans', sans-serif;
-    text-align: center;
+.cardText {
+  text-shadow: 0.2px 0.2px 1px #FFFECB;
 }
 
-body#minion {
-    background-image: url("https://thumbs.gfycat.com/SnarlingCreativeEnglishsetter-size_restricted.gif");
+.headerCard {
+  width: 100%;
 }
 
-#bodyContent {
-    /* background-color: rgba(70, 130, 180, 0.4); */
-    margin-top: 1.5rem;
-    border-radius: 30px;
-    height: auto;
+.displayCard {
+  height: 300px;
+  background-position: center top;
+  background-size: cover;
 }
 
-/* IDs End */
-
-/* Animation Start */
-
-.backgroundGradient {
-    background: linear-gradient(322deg, #c5681d, #ae2ea4, #bbab2c);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 16s ease infinite;
-    -moz-animation: AnimationName 16s ease infinite;
-    -o-animation: AnimationName 16s ease infinite;
-    animation: AnimationName 16s ease infinite;
+.displayText {
+  color: #FFFECB;
+  text-shadow: 2px 2px 5px #000000;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 14%}
-    50%{background-position:100% 87%}
-    100%{background-position:0% 14%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 14%}
-    50%{background-position:100% 87%}
-    100%{background-position:0% 14%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 14%}
-    50%{background-position:100% 87%}
-    100%{background-position:0% 14%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 14%}
-    50%{background-position:100% 87%}
-    100%{background-position:0% 14%}
+.displayLine {
+  color: #FFFECB;
+  background-color: #FFFECB;
+  width: 50%;
+  height: 4px;
 }
 
-/* Animation End */
-
-.animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #c5772e 0%,
-    #4cc9ce 29%,
-    #7f38d1 67%,
-    #d43a82 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 70px;
+.displayLine {
+  color: #FFFECB;
+  background-color: #FFFECB;
+  width: 50%;
+  height: 4px;
 }
 
-.animate-charcter2
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #c5772e 0%,
-    #4cc9ce 29%,
-    #7f38d1 67%,
-    #d43a82 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 45px;
+.titleLine {
+  color: #FFFECB;
+  background-color: #FFFECB;
+  width: 70%;
+  height: 4px;
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+.floatRight {
+  float: right;
 }
+
+.floatLeft {
+  float: left;
+}
+
+.alignedList {
+  text-align: center;
+  list-style-position: inside;
+}/*# sourceMappingURL=style.css.map */
