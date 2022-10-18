@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Changa One", cursive;
   font-weight: normal;
   color: #FFFECB;
@@ -13,6 +13,10 @@ h1, h2, h3 {
 
 .linkColor {
   color: #BBB8B2;
+}
+
+a.linkColor:hover {
+  color: #E74C3C;
 }
 
 .centerText {
@@ -186,6 +190,8 @@ a.topNavItem {
 
 .displayCard {
   height: 300px;
+  background-position: center top;
+  background-size: cover;
 }
 
 .displayText {
@@ -197,6 +203,20 @@ a.topNavItem {
   color: #FFFECB;
   background-color: #FFFECB;
   width: 50%;
+  height: 4px;
+}
+
+.displayLine {
+  color: #FFFECB;
+  background-color: #FFFECB;
+  width: 50%;
+  height: 4px;
+}
+
+.titleLine {
+  color: #FFFECB;
+  background-color: #FFFECB;
+  width: 70%;
   height: 4px;
 }
 
