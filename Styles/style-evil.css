@@ -352,6 +352,10 @@ section .projects .card a:hover i{
     left: 200px;
     z-index: -10;
 }
+.imageRound{
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
 /* ================== Pricing Styles ================== */
 /*.pricing-section{margin-top: 300px; }*/
 section .prices{
