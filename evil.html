@@ -1,38 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <link rel='stylesheet' href='Styles/style.css'>
-  <title>Kat's Page</title>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="Resources/Favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="Resources/Favicon//favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="Resources/Favicon//favicon-16x16.png">
-  <link rel="manifest" href="Resources/Favicon//site.webmanifest">
-  <!-- Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Derek Pyatt - Portfolio</title>
+  <link rel="stylesheet" href='Styles/style-evil.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <a href="#">
+        <img src="Resources/Images/pyattLogo.png" alt="Derek Pyatt Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li class="link"><a href="#home">Home</a></li>
+      <li class="link"><a href="#skills">Skills</a></li>
+      <li class="link"><a href="#projects">Projects</a></li>
+      <li class="link"><a href="#about">More About Me</a></li>
+      <li class="link"><a href="#demo">Demo Reel</a></li>
+      <li class="link"><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://www.linkedin.com/in/derek-pyatt-b3152b23a/"><button class="btn">Hire Me</button></a>
+  </nav>
 
-<body style=" background-color: rgb(194, 92, 8); background-image: url('Resources/Images/display-backgrounds/background-loop-2.gif'); background-repeat: repeat;">
-    <!-- WEBSITE CONTENT -->
-    <div class="content" style>
-      <div class="container-fluid px-4">
-        <!-- HEADER -->
-        <h1 class="display-2 text-center titleAdjust" style="font-size: 6vw;">Evil Website</h1>
-        <hr class="displayLine" />
-        <h5 class="displayText text-center">
-           Welcome to Derek's Evil site, look at this totally evil thing:
-          <br/>
-          <img src="Resources/Images/display-backgrounds/heyfuckyoupal.png" class="cardImage img-fluid"
-          style="max-width: 960px; width: 100%;" alt="Gibi-Gibi">
-        </h5>
+  <header class="container" id="home">
+    <div class="content">
+      <span class="blur"></span>
+      <span class="blur"></span>
+      <h4>CREATING INNOVATIVE SOLUTIONS IN WEB, GAME, AND MOBILE DEVELOPMENT.</h4>
+      <h1>Hi, I'm <span>Derek Pyatt</span>, a Developer & Designer</h1>
+      <p>
+        I'm Derek Pyatt, a junior in the Boise State University Games, Interactive Media, and Mobile (GIMM) program. 
+        I specialize in web development, game design, mobile development, UX design, and 3D modeling. 
+        With a passion for creative work, I aim to build engaging and innovative digital experiences.
+      </p>
+    </div>
+    <div class="image">
+      <img src="Resources/Images/DerekHeadshot.jpg" alt="Derek Pyatt">
+    </div>
+  </header>
+
+  <section class="container featuring" id="skills">
+    <h2 class="header">MY SKILLS</h2>
+    <div class="features">
+      <div class="card">
+        <span><i class="fa-solid fa-code"></i></span>
+        <h4>Web Development</h4>
+        <p>
+          Proficient in HTML, CSS, JavaScript, and frameworks like Bootstrap. Experienced in creating responsive and dynamic websites.
+        </p>
       </div>
-</body>
+      <div class="card">
+        <span><i class="fa-solid fa-share-alt"></i></span>
+        <h4>Social Media & Marketing</h4>
+        <p>
+          Skilled in managing social media platforms, creating content, and running marketing campaigns. Experienced in photography and image editing.
+        </p>
+      </div>
+      <div class="card">
+        <span><i class="fa-solid fa-mobile"></i></span>
+        <h4>Mobile Development</h4>
+        <p>
+          Experienced in Ionic for mobile apps and Alexa interactions for IoT devices. Developed a Tinder-like restaurant finder app.
+        </p>
+      </div>
+      <div class="card">
+        <span><i class="fa-solid fa-cube"></i></span>
+        <h4>3D Modeling</h4>
+        <p>
+          Proficient in 3D modeling tools like Maya and Blender. Created assets for games, animations, and AR/VR experiences.
+        </p>
+      </div>
+      <div class="card">
+        <span><i class="fa-solid fa-gamepad"></i></span>
+        <h4>Game Development</h4>
+        <p>
+          Skilled in Unity, VR/AR development, and game design. Created projects like AR Mini Golf and a VR Fishing Murder Mystery.
+        </p>
+      </div>
+      <div class="card">
+        <span><i class="fa-solid fa-vr-cardboard"></i></span>
+        <h4>Virtual & Augmented Reality</h4>
+        <p>
+          Experienced in developing immersive VR/AR experiences using Unity and ARKit. Worked on projects like Boise State Face Filters.
+        </p>
+      </div>
+      <div class="card">
+        <span><i class="fa-solid fa-palette"></i></span>
+        <h4>Graphic Design</h4>
+        <p>
+          Experienced in creating visually appealing designs using Adobe Creative Suite. Skilled in branding, illustrations, and digital art.
+        </p>
+      </div>
+      <div class="card">
+        <span><i class="fa-solid fa-pencil-ruler"></i></span>
+        <h4>UX & UI Development</h4>
+        <p>
+          Specialized in designing intuitive user interfaces and enhancing user experiences. Proficient in wireframing, prototyping, and usability testing.
+        </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="container projects-section" id="projects">
+    <h2 class="header">MY PROJECTS</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="Resources/Images/projects/boise-state-face-filters.jpg" alt="Boise State Face Filters" class="thumbnail">
+        <div class="content">
+          <h2 class="title">Boise State Face Filters</h2>
+          <p class="description">
+            Developed AR face filters for Boise State University using Spark AR. Enhanced social media engagement for the university.
+          </p>
+          <!--<a href="#">View Project <i class="fa-solid fa-code"></i></a> -->
+        </div>
+      </div>
+      <div class="card">
+        <img src="Resources/Images/projects/ar-printer-partner.jpg" alt="AR Printer Partner" class="thumbnail">
+        <div class="content">
+          <h2 class="title">AR Printer Partner</h2>
+          <p class="description">
+            Created an AR application to assist users with printer troubleshooting using Unity and ARKit.
+          </p>
+          <!--<a href="#">View Project <i class="fa-solid fa-code"></i></a> -->
+        </div>
+      </div>
+      <div class="card">
+        <img src="Resources/Images/projects/wordpress-sites.jpg" alt="Wordpress Sites" class="thumbnail">
+        <div class="content">
+          <h2 class="title">Wordpress Sites</h2>
+          <p class="description">
+            Designed and developed multiple WordPress sites for clients, focusing on usability and responsive design.
+          </p>
+          <!--<a href="#">View Project <i class="fa-solid fa-code"></i></a> -->
+        </div>
+      </div>
+      <div class="card">
+        <img src="Resources/Images/projects/data-projects.jpg" alt="Data Projects" class="thumbnail">
+        <div class="content">
+          <h2 class="title">Data Projects</h2>
+          <p class="description">
+            Worked on data visualization projects using D3.js and SQL to create interactive and insightful dashboards.
+          </p>
+          <!--<a href="#">View Project <i class="fa-solid fa-code"></i></a> -->
+        </div>
+      </div>
+      <div class="card">
+        <img src="Resources/Images/projects/social-media-management.jpg" alt="Social Media Management" class="thumbnail">
+        <div class="content">
+          <h2 class="title">Social Media Management</h2>
+          <p class="description">
+            Managed social media accounts, created content, and ran campaigns for various clients, including Country Cannabis.
+          </p>
+          <!--<a href="#">View Project <i class="fa-solid fa-code"></i></a> -->
+        </div>
+      </div>
+      <div class="card">
+        <img src="Resources/Images/projects/gobble-app.jpg" alt="Gobble App" class="thumbnail">
+        <div class="content">
+          <h2 class="title">Gobble App</h2>
+          <p class="description">
+            A Tinder-like mobile app for finding restaurants. Built with Ionic and features a swipe-based interface.
+          </p>
+          <!--<a href="#">View Project <i class="fa-solid fa-code"></i></a> -->
+        </div>
+      </div>
+    </div>
+    <!--<a href="otherWork.html" class="more">View More Projects</a>-->
+  </section>
+
+  <section class="container pricing-section" id="about">
+    <span class="another-blur"></span>
+    <span class="another-blur"></span>
+    <h2 class="header">MORE ABOUT ME</h2>
+    <p class="sub-header">
+      Here are some highlights of my professional journey, including articles, teaching, and leadership roles.
+    </p>
+    <div class="prices">
+      <div class="card">
+        <div class="content">
+          <h4>Idaho Statesman Article</h4>
+          <p class="plan-description">
+            Featured in the Idaho Statesman for my work in AR development and community engagement. Read the article <a href="https://www.idahostatesman.com/news/local/community/boise/article286744680.html" target="_blank">here</a>.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h4>PHP Architect Article</h4>
+          <p class="plan-description">
+            Published an article on PHP Architect about my journey in web development and contributions to the tech community. Read it <a href="https://www.phparch.com/community/derek-pyatt/" target="_blank">here</a>.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h4>Teaching & Leadership</h4>
+          <p class="plan-description">
+            Served as a Teaching Assistant at Boise State University and ran a summer camp focused on game development and coding for kids.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container demo-section" id="demo">
+    <h2 class="header">DEMO REEL</h2>
+    <p class="sub-header">
+      Here are some highlights of my professional journey, including articles, teaching, and leadership roles.
+    </p>
+    <div class="demo-video">
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/X5I3YHv_Mbs" title="Demo Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="container" id="contact">
+    <span class="blur"></span>
+    <span class="blur"></span>
+    <div class="column">
+      <div class="logo">
+        <img src="Resources/Images/pyattLogo.png" alt="Derek Pyatt Logo">
+      </div>
+      <p>Feel free to contact me for collaborations or inquiries.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/derek-pyatt-b3152b23a/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/derekpyatt"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/derekmypyatt/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/pyatt_derek"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="column">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <div class="column">
+      <h4>Contact Me</h4>
+      <a href="https://www.linkedin.com/in/derek-pyatt-b3152b23a/">linkedin</a>
+      <a href="https://my.indeed.com/p/derekp-921fksb">Indeed</a>
+    </div>
+  </footer>
+  <div class="copyright">
+    Copyright © 2023 Derek Pyatt. All Rights Reserved.
+  </div>
+</body>
 </html>
