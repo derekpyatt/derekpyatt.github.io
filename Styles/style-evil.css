@@ -343,6 +343,15 @@ section .projects .card a:hover i{
     background-color: #1d4ed8; 
     border: 1px solid #ccc;
 }
+.projects-section{
+    position: relative;
+}
+.projects-section > .bonus-blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    left: 200px;
+    z-index: -10;
+}
 /* ================== Pricing Styles ================== */
 /*.pricing-section{margin-top: 300px; }*/
 section .prices{
